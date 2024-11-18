@@ -1,6 +1,7 @@
 # Stock Trade Value Prediction - Multi-variate Time Series Analysis and Forecasting
 
 ![](docs/img/trade_value/monthly_trade_value_price.png)
+
 <p style="text-align: center">Figure 1: Monthly Stock Trade Value Price</p>
 
 The purpose of the project is to develop a multi-variate time series predictive model that can forecast future stock 
