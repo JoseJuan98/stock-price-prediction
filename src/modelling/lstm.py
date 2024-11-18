@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """LSTM model for time series forecasting."""
 
+from common import get_logger
 from common.base_model import BaseModel
 from common.data_preparation import get_features_and_target
-from common import get_logger
 
 
 class LSTMModel(BaseModel):
