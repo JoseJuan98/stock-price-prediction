@@ -188,6 +188,7 @@ Long Short-Term Memory (LSTM) is a type of RNN architecture, and are often used 
 - Performance analysis: Statistical models like ARIMA offered moderate results; complex models like dynamic regression, gradient boosting machine, and LSTM performed better.
   - ARIMA: Parameter selection and autocorrelation influence the ARIMA model's effectiveness. 
   - Hybrid Models: VAR + Linear Regression didn't perform well.
+  - Gradient Boosting Machine: GBM showed competitive results, indicating its potential for stock price prediction.
 - Exogenous Factors: Stock predictions can be influenced by external factors, underscoring the need for integrating additional variables.
 - Evaluation Metrics: Metrics like MAE, MSE, and RMSE provide a way to compare model strengths and areas for improvement.
 - Future Exploration: More complex architectures and additional features like economic indicators could enhance predictions.
@@ -197,4 +198,4 @@ Long Short-Term Memory (LSTM) is a type of RNN architecture, and are often used 
 
 This project provided valuable insights into the predictive modeling of stock prices using time series data. Through comprehensive data preparation, modeling, and evaluation, we identified effective strategies and models for stock price prediction. 
 
-Future could focus on enhancing model architectures and integrating more diverse data sources to improve prediction accuracy.
+In the future could focus on enhancing model architectures and integrating more diverse data sources to improve prediction accuracy.

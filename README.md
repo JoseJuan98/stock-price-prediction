@@ -1,10 +1,10 @@
-# Project: Stock Price Prediction
+# Stock Trade Value Prediction - Multi-variate Time Series Analysis and Forecasting
 
-![](docs/img/eda/price_over_2023.png)
-<p style="text-align: center">Figure 1: Stock Price Variables over 2023</p>
+![](docs/img/trade_value/monthly_trade_value_price.png)
+<p style="text-align: center">Figure 1: Monthly Stock Trade Value Price</p>
 
-The purpose of the project is to develop a predictive model that can accurately forecast future stock prices of an index
-based on historical data. This could aid in making informed investment decisions.
+The purpose of the project is to develop a multi-variate time series predictive model that can forecast future stock 
+trade value of an index based on historical data. This could aid in making informed investment decisions.
 
 To check for ideas:
 - [Stock Price Prediction using Machine Learning](https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/)
@@ -63,6 +63,9 @@ The dataset chosen contains the daily stock prices of the S&P 500 index spanning
 a benchmark index that tracks the performance of 500 large-cap companies listed on stock exchanges in the United States.
 It's ideal to capture long-term trends and patterns.
 
+![](docs/img/eda/price_over_2023.png)
+<p style="text-align: center">Figure 2: Stock Price Variables over 2023</p>
+
 The source of the dataset is from Hugging Face [jwigginton/timeseries-daily-sp500](https://huggingface.co/datasets/jwigginton/timeseries-daily-sp500).
 
 It contains the following features:
@@ -110,14 +113,33 @@ Applied several techniques, such as:
 <p style="text-align: center">Figure 2: Trade Value Features</p>
 
 
-
-## Insights
+## Insights of Iteration 1
 
 Following the initial iteration in the data understanding phase, several insights have been gathered:
 
 - The close price has been identified as not the most relevant variable for predicting index performance. Consequently, 
-the Stock Trade Value has been included for the second iteration of the data understanding pahse 
+the Stock Trade Value has been included for the second iteration of the data understanding phase at 
 `src/data_understading/stock_trade_value_eda.py`.
-- It has been observed that stock prediction can be significantly influenced by factors beyond the current dataset, 
-including exogenous variables relevant to real-world scenarios.
+- It has been observed that stock prediction and stock trade value can be significantly influenced by factors beyond 
+the current dataset, including exogenous variables relevant to real-world scenarios.
 
+## Insights of Final Iteration
+
+![](docs/img/forecast/GBM_Model_forecast.png)
+<p style="text-align: center">Figure 3: Gradient Boosting Machine Forecast</p>
+
+- Data Preparation: Techniques like differentiation and moving averages can help with model readiness and performance.
+- Performance analysis: Statistical models like ARIMA offered moderate results; complex models like dynamic regression and gradient boosting machine performed better.
+  - ARIMA: Parameter selection and autocorrelation influence the ARIMA model's effectiveness. 
+  - Hybrid Models: VAR + Linear Regression didn't perform well.
+  - Gradient Boosting Machine: GBM showed competitive results, indicating its potential for stock price prediction.
+- Exogenous Factors: Stock predictions can be influenced by external factors, underscoring the need for integrating additional variables.
+- Evaluation Metrics: Metrics like MAE, MSE, and RMSE provide a way to compare model strengths and areas for improvement. At the same time,
+other metrics like AIC, BIC, and HQIC could interpret better the model's performance.
+- Future Exploration: More complex architectures and additional features like economic indicators could enhance predictions.
+
+# Conclusion
+
+This project provided valuable insights into the predictive modeling of stock prices using time series data. Through comprehensive data preparation, modeling, and evaluation, we identified effective strategies and models for stock price prediction. 
+
+In the future could focus on enhancing model architectures and integrating more diverse data sources to improve prediction accuracy.
