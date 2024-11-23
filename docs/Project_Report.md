@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This project focuses on predicting stock prices using historical data. The goal is to leverage this data to forecast future stock values, which can be instrumental in:
+This project focuses on predicting stock trade value of a stock market index using historical data. The goal is to leverage this data to forecast future stock values, which can be instrumental in:
 
 - **Improving investment strategies:** By predicting stock prices, investors can make more informed decisions about when to buy or sell stocks.
 - **Enhancing decision-making processes:** Companies and individual investors can use predictions to shape their financial strategies and mitigate risks.

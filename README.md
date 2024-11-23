@@ -3,12 +3,8 @@
 ![](docs/img/trade_value/monthly_trade_value_price.png)
 <p style="text-align: center">Figure 1: Monthly Stock Trade Value Price</p>
 
-The purpose of the project is to develop a multi-variate time series predictive model that can forecast future stock 
-trade value of an index based on historical data. This could aid in making informed investment decisions.
-
-To check for ideas:
-- [Stock Price Prediction using Machine Learning](https://www.analyticsvidhya.com/blog/2018/10/predicting-stock-price-machine-learningnd-deep-learning-techniques-python/)
-- [How to approach a correlated multiple time series problem](https://www.reddit.com/r/datascience/comments/uu6sh0/how_to_approach_a_correlated_multiple_time_series/)
+The purpose of the project is to develop a multi-variate time series predictive model that can forecast the future stock 
+trade value of a stock market index based on historical data. This could aid in making informed investment decisions.
 
 ## Project Plan
 
