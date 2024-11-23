@@ -109,7 +109,7 @@ Applied several techniques, such as:
 <p style="text-align: center">Figure 2: Trade Value Features</p>
 
 
-## Insights of Iteration 1
+## Insights of First Iteration
 
 Following the initial iteration in the data understanding phase, several insights have been gathered:
 
